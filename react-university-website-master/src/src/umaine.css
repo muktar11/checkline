@@ -1,0 +1,1056 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.header_hh {
+    width: 100%;
+    height: 30px;
+    display: flex;
+
+}
+
+.header_container1 {
+    width: 60%;
+    background-color: darkolivegreen;
+
+}
+
+.header_container2 {
+    width: 40%;
+    background-color: darkolivegreen;
+
+
+}
+
+.header_container2 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.header_container2 li {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 8px;
+    padding-left: 3px;
+}
+
+.header_container2 a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.header_container2 a:hover::after {
+    width: 100%;
+}
+
+.header_container2 a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+
+
+/* navbar*/
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+
+}
+
+.nav1 {
+    width: 13%;
+    height: 100%;
+}
+
+.nav1 img {
+    height: 100%;
+    width: 100%;
+    padding-top: 8px;
+}
+
+.nav2 {
+    width: 74%;
+    height: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .nav2:hover .dropdown-content {
+    display: block;
+  }
+
+.nav2 li {
+    display: inline-block;
+    margin-top: 1px;
+    padding: 19px;
+
+}
+
+.nav2 a {
+    color: darkolivegreen;
+    text-decoration: none;
+    font-size: larger;
+}
+
+#search {
+    float: right;
+    padding: 15px;
+    border: none;
+}
+
+
+.nav2 a:hover::after {
+    width: 100%;
+}
+
+.nav2 a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: darkolivegreen;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+
+
+.nav3 {
+    background-color: darkolivegreen;
+    width: 13%;
+}
+
+.nav3 a {
+    color: white;
+    display: inline-block;
+    font-size: larger;
+    padding: 12px 16px 12px;
+    text-decoration: none;
+}
+
+/* Media Query to hide nav2 li on mobile and tablet */
+@media (max-width: 768px) {
+  .nav2 ul {
+    display: none;
+  }
+  .nav3 a {
+    display: none;
+  }
+}
+
+
+/* background image  Section1 */
+.section1 {
+    width: 100%;
+    background-image: url('Mall-Summer-header.jpg');
+    height: 1100px;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.section1_1 {
+    margin-left: 240px;
+    margin-top: 600px;
+    color: white;
+    font-size: xx-large;
+    display: inline-block;
+
+}
+
+.section1_1 button {
+
+    padding: 13px 50px 13px 35px;
+    font-size: 20px;
+    background-color: rgb(25, 73, 112);
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .section1_1 {
+    margin-left: 150px;
+    margin-top: 500px;
+    font-size: x-large;
+  }
+
+  .section1_1 button {
+    padding: 12px 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section1_1 {
+    margin-left: 100px;
+    margin-top: 400px;
+    font-size: large;
+  }
+
+  .section1_1 button {
+    padding: 10px 35px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1 {
+    height: 900px;
+  }
+
+  .section1_1 {
+    margin-left: 50px;
+    margin-top: 300px;
+    font-size: medium;
+  }
+
+  .section1_1 button {
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section1 {
+    height: 700px;
+  }
+
+  .section1_1 {
+    margin-left: 20px;
+    margin-top: 200px;
+    font-size: small;
+  }
+
+  .section1_1 button {
+    padding: 6px 25px;
+    font-size: 12px;
+  }
+}
+
+
+.section1_2 {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(25, 54, 112);
+    display: flex;
+}
+
+.section1_2 button h2 {
+    color: rgb(25, 50, 112);
+    background-color: white;
+}
+
+#button1 {
+    margin-top: 50px;
+    margin-left: 370px;
+}
+
+#button2 {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#button3 {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .section1_2 {
+    height: auto;
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+  }
+
+  #button1, #button2, #button3 {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-top: 20px; /* Adjust top margin for spacing */
+  }
+
+  .section1_2 button {
+    padding: 10px 30px; /* Decrease padding on smaller screens */
+    font-size: 16px; /* Decrease font size on smaller screens */
+  }
+}
+
+
+.section2_container {
+    width: 100%;
+    height: 880px;
+    display: flex;
+    overflow: hidden;
+    margin: 35px 0px 0px 00px;
+}
+
+.section2_container1 {
+    width: 33%;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 18px;
+    color: rgb(14, 67, 110);
+    border: 4 px solid red;
+    padding-left: 70px;
+}
+
+.section2_container2 {
+    width: 33%;
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(14, 67, 110);
+}
+
+.section2_container3 {
+    width: 34%;
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(14, 67, 110);
+}
+
+
+
+
+
+
+
+
+.section2_container {
+    width: 100%;
+    height: auto; /* Adjust height for better responsiveness */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 35px 0px 0px 0px;
+}
+
+.section2_container1,
+.section2_container2,
+.section2_container3 {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    font-size: 18px;
+    color: rgb(14, 67, 110);
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.section2_container1 img,
+.section2_container2 img,
+.section2_container3 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 768px) {
+    .section2_container1,
+    .section2_container2,
+    .section2_container3 {
+        width: 33.33%;
+        display: inline-block;
+        vertical-align: top; /* Align containers vertically */
+    }
+
+    .section2_container1 {
+        padding-left: 70px;
+    }
+}
+
+/* Section 3 */
+.section3_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 0px 0px 60px 0px;
+}
+
+.section3_container1,
+.section3_container2 {
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: rgb(183, 218, 240);
+    padding: 20px;
+}
+
+.section3_container2 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust layout for larger screens */
+@media (min-width: 768px) {
+    .section3_container1,
+    .section3_container2 {
+        width: 50%;
+    }
+
+    .section3_container2 img {
+        height: 420px;
+    }
+}
+/* Section 4 */
+.section4_container {
+    background-color: rgb(33, 47, 126);
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center; /* Center elements for smaller screens */
+}
+
+.section4_container h1 {
+    color: white;
+    margin: 80px 0px 0px 155px;
+    font-size: 45px;
+    display: inline-block;
+}
+
+.section4_container p {
+    color: white;
+    margin: 10px 20px 0px 155px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.section4_container button {
+    padding: 13px 50px 13px 35px;
+    margin: 30px 0px 0px 150px;
+    background-color: white;
+}
+
+.section4_container button a {
+    font-size: 20px;
+    color: rgb(25, 73, 112);
+    text-decoration: none;
+}
+
+.section4_container img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Section 5 */
+.section5_container {
+    width: 100%;
+    height: auto;
+    background-image: url('dance.jpg');
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+}
+
+.section5_container h1,
+.section5_container p,
+.section5_container button {
+    display: block;
+    width: 100%;
+    
+}
+
+.section5_container h1 {
+    font-size: 45px;
+}
+
+.section5_container p {
+    font-size: 20px;
+}
+
+.section5_container button {
+    padding: 13px 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section4_container h1, .section4_container p, .section4_container button {
+        margin: 10px auto;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .section4_container h1 {
+        font-size: 30px;
+        margin: 50px 0 20px 0;
+    }
+
+    .section4_container p {
+        font-size: 18px;
+        margin: 10px 20px;
+    }
+
+    .section4_container button {
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+
+    .section5_container {
+        margin: 50px 10px 20px 10px;
+    }
+
+    .section5_container h1 {
+        font-size: 30px;
+    }
+
+    .section5_container p {
+        font-size: 18px;
+    }
+
+    .section5_container button {
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section4_container h1 {
+        font-size: 25px;
+        margin: 30px 0 10px 0;
+    }
+
+    .section4_container p {
+        font-size: 16px;
+    }
+
+    .section4_container button {
+        padding: 8px 20px;
+    }
+
+    .section5_container h1 {
+        font-size: 25px;
+    }
+
+    .section5_container p {
+        font-size: 16px;
+    }
+
+    .section5_container button {
+        padding: 8px 20px;
+    }
+}
+
+
+/* Section 6 Container */
+.section6_container {
+    width: 100%;
+    max-width: 1200px; /* Added maximum width for better scaling */
+    margin: 120px auto; /* Centering the container */
+}
+
+.section6_container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Section 7 Container */
+.section7_container {
+    width: 100%;
+    height: auto; /* Changed to auto for content-based height */
+    background-color: rgb(25, 73, 112);
+    padding: 50px 20px; /* Added padding for better spacing */
+    text-align: center; /* Center aligning content */
+}
+
+.section7_container h1,
+.section7_container p,
+.section7_container button {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; /* Limiting content width for better readability */
+    color: white; /* Setting text color to white */
+}
+
+.section7_container img {
+    width: 100%; /* Make the image responsive */
+    max-width: 100%; /* Set maximum width to prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+/* Adjustments for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .section7_container h1 {
+        font-size: 35px; /* Smaller font size for smaller screens */
+        margin: 20px 10px; /* Adjusting margin for smaller screens */
+    }
+    .section7_container p {
+        font-size: 18px; /* Smaller font size for smaller screens */
+        margin: 15px 10px; /* Adjusting margin for smaller screens */
+    }
+    .section7_container button {
+        padding: 10px 30px; /* Smaller padding for smaller screens */
+        margin: 30px 0px; /* Adjusting margin for smaller screens */
+    }
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 480px) {
+    .section7_container h1 {
+        font-size: 28px; /* Smaller font size for mobile screens */
+        margin: 15px 5px; /* Adjusting margin for mobile screens */
+    }
+    .section7_container p {
+        font-size: 16px; /* Smaller font size for mobile screens */
+        margin: 10px 5px; /* Adjusting margin for mobile screens */
+    }
+    .section7_container button {
+        padding: 8px 20px; /* Smaller padding for mobile screens */
+        margin: 20px 0px; /* Adjusting margin for mobile screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section7_container {
+        display: none;
+    }
+   
+}
+
+/* Section 8 Container */
+.section8_container {
+    width: 100%;
+    height: auto; /* Changed to auto for content-based height */
+    text-align: center;
+    padding: 50px 20px; /* Added padding for better spacing */
+}
+
+/* Section 9 Container */
+.section9_container {
+    width: 100%;
+    height: auto; /* Changed to auto for content-based height */
+    background-image: url('city.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    border: 1px solid white;
+    padding: 50px 20px; /* Added padding for better spacing */
+}
+
+.section9_container1 {
+    width: 100%;
+    max-width: 1200px; /* Added maximum width for better scaling */
+    margin: 50px auto; /* Centering the container */
+    display: flex;
+    flex-wrap: wrap; /* Allowing items to wrap on smaller screens */
+}
+
+.section9_container1_part1,
+.section9_container1_part2 {
+    width: 100%;
+    max-width: 50%; /* Each part takes half of the container */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .section9_container1_part1,
+    .section9_container1_part2 {
+        max-width: 100%; /* Each part takes full width on smaller screens */
+    }
+}
+
+/* Section 9 Container */
+.section9_container {
+    width: 100%;
+    height: auto; /* Changed to auto for content-based height */
+    background-image: url('city.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    border: 1px solid white;
+    padding: 50px 20px; /* Added padding for better spacing */
+}
+
+.section9_container1 {
+    width: 100%;
+    max-width: 1200px; /* Added maximum width for better scaling */
+    margin: 50px auto; /* Centering the container */
+    display: flex;
+    flex-wrap: wrap; /* Allowing items to wrap on smaller screens */
+}
+
+.section9_container1_part1,
+.section9_container1_part2 {
+    width: 100%;
+    max-width: 50%; /* Each part takes half of the container */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.section9_container1_part1 {
+    text-align: center; /* Center-align text and button */
+}
+
+.section9_container1_part1 img {
+    height: 70px;
+    width: 90px;
+    margin-top: 90px;
+}
+
+.section9_container1_part1 p {
+    margin: 20px; /* Adjusted margin for better spacing */
+    font-size: 16px;
+    font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
+}
+
+.section9_container1_part1 h5 {
+    margin: 10px 0; /* Adjusted margin for better spacing */
+    font-size: 14px;
+    font-family: cursive;
+}
+
+.section9_container1_part1 button {
+    padding: 12px 50px 12px 35px;
+    margin: 20px 0; /* Adjusted margin for better spacing */
+    background-color: rgb(25, 73, 112);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.section9_container1_part1 button a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.section9_container1_part2 img {
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Make the image responsive */
+    max-width: 85%; /* Ensure image doesn't overflow */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .section9_container1_part1,
+    .section9_container1_part2 {
+        max-width: 100%; /* Each part takes full width on smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .section9_container1_part1 img {
+        margin-top: 30px; /* Reduce margin for smaller screens */
+    }
+
+    .section9_container1_part1 button {
+        padding: 10px 30px; /* Reduce padding for smaller screens */
+        margin: 20px auto; /* Center the button */
+    }
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 480px) {
+    .section9_container1_part1 img {
+        height: 50px; /* Smaller logo size for mobile screens */
+        width: 70px;
+        margin-top: 20px; /* Further reduce margin for mobile screens */
+    }
+
+    .section9_container1_part1 p {
+        font-size: 14px; /* Smaller font size for mobile screens */
+        margin: 10px; /* Adjust margin for mobile screens */
+    }
+
+    .section9_container1_part1 h5 {
+        font-size: 12px; /* Smaller font size for mobile screens */
+        margin: 5px 0; /* Adjust margin for mobile screens */
+    }
+
+    .section9_container1_part1 button {
+        padding: 8px 20px; /* Smaller padding for mobile screens */
+        margin: 10px auto; /* Adjust margin for mobile screens */
+    }
+
+    .section9_container1_part2 img {
+        max-width: 100%; /* Ensure image doesn't overflow */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+.section11_container {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.section11_heading {
+  color: rgb(25, 73, 112);
+  font-size: 25px;
+  font-family: cursive;
+}
+
+.section11_text {
+  color: black;
+  font-size: 18px;
+  margin-top: 13px;
+}
+
+.section11_button {
+  padding: 12px 50px;
+  margin-top: 40px;
+  background-color: rgb(25, 73, 112);
+}
+
+.section11_button a {
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+}
+
+.section11_img {
+  width: 81%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .section11_heading {
+    font-size: 22px;
+  }
+  
+  .section11_text {
+    font-size: 16px;
+  }
+  
+  .section11_button {
+    padding: 10px 40px;
+  }
+
+  .section11_button a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section11_heading {
+    font-size: 20px;
+  }
+  
+  .section11_text {
+    font-size: 15px;
+  }
+  
+  .section11_button {
+    padding: 8px 30px;
+  }
+
+  .section11_button a {
+    font-size: 14px;
+  }
+  
+  .section11_img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .section11_heading {
+    font-size: 18px;
+  }
+  
+  .section11_text {
+    font-size: 14px;
+  }
+  
+  .section11_button {
+    padding: 6px 20px;
+  }
+
+  .section11_button a {
+    font-size: 13px;
+  }
+  
+  .section11_img {
+    display: none;
+  }
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .section11_heading {
+    font-size: 22px;
+  }
+  
+  .section11_text {
+    font-size: 16px;
+  }
+  
+  .section11_button {
+    padding: 10px 40px;
+  }
+
+  .section11_button a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section11_heading {
+    font-size: 20px;
+  }
+  
+  .section11_text {
+    font-size: 15px;
+  }
+  
+  .section11_button {
+    padding: 8px 30px;
+  }
+
+  .section11_button a {
+    font-size: 14px;
+  }
+  
+.section11_container img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section11_heading {
+    font-size: 18px;
+  }
+  
+  .section11_text {
+    font-size: 14px;
+  }
+  
+  .section11_button {
+    padding: 6px 20px;
+  }
+
+  .section11_button a {
+    font-size: 13px;
+  }
+  
+  .section11_container img {
+    width: 90%;
+  }
+}
+
+
+/* Section13_Container -------  */
+
+.section13_container {
+    margin-top: 160px;
+    width: 100%;
+    height: 1700px;
+    background-color: rgb(25, 73, 112);
+}
+
+.section13_container_part1 {
+    width: 75%;
+    height: 1620px;
+    background-color: rgb(107, 182, 229);
+    margin-bottom: 0px;
+}
+
+.section13_container_part1_child1 {
+    width: 92%;
+    height: 600px;
+    overflow: hidden;
+
+}
+
+.section13_container_part1_child1 img {
+    width: 110%;
+
+}
+
+.section13_container_part1_child2 {
+    width: 92%;
+    height: 300px;
+    background-color: white;
+}
+
+.section13_container_part1_child3 {
+    width: 92%;
+    overflow: hidden;
+    height: 360px;
+}
+
+.section13_container_part1_child3 img {
+    width: 100%;
+    height: 120%;
+}
+
+.section13_container_part1_child4 {
+    width: 92%;
+    height: 300px;
+    background-color: white;
+}
+
+
+
+/* Footer ----  */
+
+.footer1 {
+    width: 100%;
+    height: 90px;
+}
+
+.footer1 a{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.footer2 {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(12, 9, 9, 0.953);
+}
+
+.footer2 a {
+    display: inline-block;
+    padding: 38px 5px 20px 15px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer2 p{
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+}
+
+.footer2 a:hover::after {
+    width: 100%;
+}
+
+.footer2 a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(25, 73, 112);
+   
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}

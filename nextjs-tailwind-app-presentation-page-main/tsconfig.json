@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+, "src/app-page/faqs.js", "src/app-page/feature.js", "src/app-page/hero.js", "src/app-page/layout.js", "src/app-page/index.js", "src/app-page/mobile-convenience.js", "src/app-page/page.js", "src/app-page/testimonials.js", "src/app-page/video-intro.js", "src/components/feature-card.js", "src/components/fixed-plugin.js", "src/components/footer.js", "src/components/index.js", "src/components/layout.js", "src/components/info-card.js", "src/components/navbar.js", "src/components/testimonial-card.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
